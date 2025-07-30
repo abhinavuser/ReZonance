@@ -286,8 +286,8 @@ export default function RezonancePage() {
           {/* Enhanced Event Info Cards */}
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto animate-fade-in-up">
             {[
-              { icon: MapPin, title: "VENUE", info: "MG Auditorium", color: "from-blue-500 to-cyan-500" },
-              { icon: Calendar, title: "DATE", info: "3rd & 4th Sept", color: "from-purple-500 to-pink-500" },
+              { icon: MapPin, title: "VENUE", info: "Kasthurbha Auditorium", color: "from-blue-500 to-cyan-500" },
+              { icon: Calendar, title: "DATE", info: "12th & 13th Sept", color: "from-purple-500 to-pink-500" },
               { icon: Clock, title: "TIME", info: "8am to 12pm", color: "from-cyan-500 to-blue-500" },
             ].map((item, index) => (
               <div
@@ -376,6 +376,8 @@ export default function RezonancePage() {
             <p className="text-2xl md:text-3xl text-white/70 font-extralight leading-relaxed max-w-4xl mx-auto animate-fade-in-up">
               ReZonance is VIT Chennai's premier 24-hour hackathon focused on electronics and innovation. Join us for an
               electrifying experience where creativity meets technology.
+              Havoltz Club
+Where innovation meets excellence. Join our community of passionate individuals dedicated to pushing the boundaries of technology and creativity. We aim to elevate practical skills in both software and hardware, aligning with the significant market demand for expertise in these areas.
             </p>
           </div>
         </div>
@@ -448,14 +450,21 @@ export default function RezonancePage() {
               },
               {
                 icon: Wifi,
-                title: "IoT",
+                title: "VLSI DESIGN",
                 desc: "Create connected devices for the future, building the next generation of smart, interconnected systems",
                 color: "from-blue-500/20 to-blue-600/20",
                 borderColor: "border-blue-500/30",
               },
               {
+                icon: Zap,
+                title: "AI & ELECTRONICS",
+                desc: "Create AI-powered electronics solutions that enhance human capabilities and solve real-world problems",
+                color: "from-blue-500/20 to-blue-600/20",
+                borderColor: "border-blue-500/30",
+              },
+              {
                 icon: CircuitBoard,
-                title: "CIRCUIT DESIGN",
+                title: "PCB DESIGN",
                 desc: "Engineer cutting-edge electronic circuits that form the foundation of tomorrow's technology",
                 color: "from-cyan-500/20 to-cyan-600/20",
                 borderColor: "border-cyan-500/30",
@@ -530,9 +539,9 @@ export default function RezonancePage() {
 
           <div className="grid lg:grid-cols-3 gap-12">
             {[
-              { place: "1st Place", amount: "₹50,000", color: "from-yellow-400 to-yellow-600", bg: "bg-yellow-500/10" },
-              { place: "2nd Place", amount: "₹30,000", color: "from-gray-300 to-gray-500", bg: "bg-gray-500/10" },
-              { place: "3rd Place", amount: "₹20,000", color: "from-orange-400 to-orange-600", bg: "bg-orange-500/10" },
+              { place: "1st Place", amount: "₹??,???", color: "from-yellow-400 to-yellow-600", bg: "bg-yellow-500/10" },
+              { place: "2nd Place", amount: "₹??,???", color: "from-gray-300 to-gray-500", bg: "bg-gray-500/10" },
+              { place: "3rd Place", amount: "₹??,???", color: "from-orange-400 to-orange-600", bg: "bg-orange-500/10" },
             ].map((prize, index) => (
               <div
                 key={prize.place}
@@ -630,19 +639,34 @@ export default function RezonancePage() {
             <div className="w-32 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent mx-auto mb-12" />
           </div>
 
+          <div className="mb-16">
+              <h4 className="text-2xl font-extralight text-purple-400 mb-8 text-center tracking-wide">Student Coordinators</h4>
+              <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+                {[
+                  "Tarun Prabhakar",
+                  "Jacob Sam", 
+                  "Sarah Johnson",
+                  "Michael Chen",
+                  "Priya Patel",
+                  "Alex Rodriguez"
+                ].map((name, index) => (
+                  <div key={name} className="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 text-center hover:bg-white/10 transition-all duration-500 hover:scale-105">
+                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <div className="text-white/40 text-2xl font-bold">{name.charAt(0)}</div>
+                    </div>
+                    <h5 className="text-white font-extralight text-sm">{name}</h5>
+                    <p className="text-white/60 font-extralight text-xs">Coordinator</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-12 hover:bg-white/10 transition-all duration-500 hover:scale-105">
               <h3 className="text-3xl font-extralight text-blue-400 mb-8 tracking-wide">FACULTY COORDINATORS</h3>
               <div className="space-y-4 text-white/70 font-extralight text-xl">
                 <p>Dr. JAYAPRAKASH R</p>
                 <p>Dr. SETHIL KUMAR</p>
-              </div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-12 hover:bg-white/10 transition-all duration-500 hover:scale-105">
-              <h3 className="text-3xl font-extralight text-purple-400 mb-8 tracking-wide">STUDENT COORDINATORS</h3>
-              <div className="space-y-4 text-white/70 font-extralight text-xl">
-                <p>TARUN PRABHAKAR</p>
-                <p>JACOB SAM</p>
               </div>
             </div>
           </div>
